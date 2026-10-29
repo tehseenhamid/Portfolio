@@ -1,0 +1,13 @@
+{
+  "name": "tehseen-hamid-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site with a small SQLite-backed client reviews API",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "reviews": "node --no-warnings admin.js list"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

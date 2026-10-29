@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Design Studio — design your own website and send it to Tehseen Hamid</title>
+<meta name="description" content="Design your own website: pick colours from thousands of shades, 19 fonts, animations for every element, then send the design to Tehseen Hamid on WhatsApp.">
+<meta name="theme-color" content="#f0e9da">
+<link rel="stylesheet" href="assets/css/studio.css?v=20261031">
+</head>
+<body class="studio" data-dev="desktop">
+
+<header class="sh">
+  <a class="sh__back" href="index.html">← Portfolio</a>
+  <b class="sh__title">Design <span>Studio</span></b>
+  <button type="button" class="sh__cta" id="goSend">Send to Tehseen</button>
+</header>
+
+<main class="app">
+
+  <!-- ===================== LIVE PREVIEW ===================== -->
+  <section class="prev" aria-label="Live preview of your website">
+    <div class="bar">
+      <div class="seg seg--sm" id="dev" role="group" aria-label="Preview size">
+        <button type="button" data-d="desktop" class="on">Desktop</button>
+        <button type="button" data-d="tablet">Tablet</button>
+        <button type="button" data-d="phone">Phone</button>
+      </div>
+      <div class="bar__r">
+        <button type="button" class="tb" id="undo" title="Undo" disabled>Undo</button>
+        <button type="button" class="tb" id="redo" title="Redo" disabled>Redo</button>
+        <button type="button" class="tb" id="editMode" aria-pressed="true">Click to edit: on</button>
+        <button type="button" class="tb" id="replayAll">Replay</button>
+        <button type="button" class="tb" id="fsBtn">Full screen</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="pvframe" id="pvframe">
+        <div class="pv" id="pv" data-edit="1">
+
+          <!-- NAV -->
+          <nav class="nav pd" data-el="nav" data-sec="nav" data-slabel="Menu bar">
+            <span class="logo hd" data-el="logo" data-tx="logo" data-lb="Brand name">Brandly</span>
+            <span class="links">
+              <span data-el="navLinks" data-tx="n1" data-lb="Menu link 1">Home</span>
+              <span data-el="navLinks" data-tx="n2" data-lb="Menu link 2">Services</span>
+              <span data-el="navLinks" data-tx="n3" data-lb="Menu link 3">Pricing</span>
+              <span data-el="navLinks" data-tx="n4" data-lb="Menu link 4">Contact</span>
+            </span>
+            <span class="bt sm" data-el="navBtn" data-tx="navBtn" data-lb="Menu button">Get a quote</span>
+          </nav>
+
+          <!-- HERO -->
+          <header class="sec hero pd" data-sec="hero" data-slabel="Hero" data-el="heroSec">
+            <div class="shapes" aria-hidden="true"><i class="shp s1" data-el="shapes"></i><i class="shp s2" data-el="shapes"></i><i class="shp s3" data-el="shapes"></i></div>
+            <div class="wrap hero__in">
+              <div class="hero__txt">
+                <p class="tag" data-el="heroTag" data-tx="heroTag" data-lb="Small label">Your business name</p>
+                <h1 class="hd hero__t" data-el="heroTitle" data-tx="heroTitle" data-lb="Main headline">We build websites that grow your business.</h1>
+                <p class="lead" data-el="heroSub" data-tx="heroSub" data-lb="Sub headline">Clean design, fast pages and a simple way for customers to reach you.</p>
+                <div class="cta">
+                  <span class="bt" data-el="btn1" data-tx="btn1" data-lb="Main button">Get started</span>
+                  <span class="bt alt" data-el="btn2" data-tx="btn2" data-lb="Second button">See our work</span>
+                </div>
+              </div>
+              <div class="mock" data-el="heroImg"><i class="mock__bar"><b></b><b></b><b></b></i><i class="mock__h"></i><i class="mock__l"></i><i class="mock__l w2"></i><div class="mock__g"><i></i><i></i><i></i></div></div>
+            </div>
+          </header>
+
+          <!-- TICKER -->
+          <div class="tk" data-sec="ticker" data-slabel="Scrolling strip" data-el="ticker" aria-hidden="true">
+            <div class="tk__in"><span>Fast</span><span>Modern</span><span>Mobile-friendly</span><span>Secure</span><span>SEO ready</span><span>Fast</span><span>Modern</span><span>Mobile-friendly</span><span>Secure</span><span>SEO ready</span><span>Fast</span><span>Modern</span><span>Mobile-friendly</span><span>Secure</span><span>SEO ready</span><span>Fast</span><span>Modern</span><span>Mobile-friendly</span><span>Secure</span><span>SEO ready</span></div>
+          </div>
+
+          <!-- ABOUT -->
+          <section class="sec alt about pd" data-sec="about" data-slabel="About" data-el="aboutSec">
+            <div class="wrap about__in">
+              <div class="aimg" data-el="aboutImg"><i></i><i></i><i></i></div>
+              <div class="about__txt">
+                <h2 class="hd sect" data-el="headings" data-tx="aboutTitle" data-lb="About title">A team that cares about your result.</h2>
+                <p class="body" data-el="aboutText" data-tx="aboutText" data-lb="About text" data-long="1">We plan, design and build every page around one goal: more customers for you. You get a clear process, honest updates and a website that loads fast on every device.</p>
+                <ul class="check">
+                  <li data-el="aboutList" data-tx="l1" data-lb="Checklist 1">Custom design, no templates</li>
+                  <li data-el="aboutList" data-tx="l2" data-lb="Checklist 2">Mobile, tablet and desktop ready</li>
+                  <li data-el="aboutList" data-tx="l3" data-lb="Checklist 3">Search engine friendly from day one</li>
+                </ul>
+                <span class="bt" data-el="aboutBtn" data-tx="aboutBtn" data-lb="About button">Meet the team</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- SERVICES -->
+          <section class="sec services pd" data-sec="services" data-slabel="Services" data-el="servicesSec">
+            <div class="wrap">
+              <h2 class="hd sect" data-el="headings" data-tx="svcT" data-lb="Services title">What we do for you</h2>
+              <p class="intro" data-el="subheads" data-tx="svcS" data-lb="Services intro">Everything your business needs online, in one place.</p>
+              <div class="grid3">
+                <article class="card pd" data-el="cards"><span class="num-badge">1</span><h4 class="hd" data-el="cardTitle" data-tx="c1t" data-lb="Card 1 title">Design</h4><p data-el="cardText" data-tx="c1x" data-lb="Card 1 text" data-long="1">A look that matches your brand and builds trust with visitors.</p></article>
+                <article class="card pd" data-el="cards"><span class="num-badge">2</span><h4 class="hd" data-el="cardTitle" data-tx="c2t" data-lb="Card 2 title">Development</h4><p data-el="cardText" data-tx="c2x" data-lb="Card 2 text" data-long="1">Fast, secure pages that work well on every screen size.</p></article>
+                <article class="card pd" data-el="cards"><span class="num-badge">3</span><h4 class="hd" data-el="cardTitle" data-tx="c3t" data-lb="Card 3 title">Growth</h4><p data-el="cardText" data-tx="c3x" data-lb="Card 3 text" data-long="1">SEO and tracking that bring in new customers every month.</p></article>
+              </div>
+            </div>
+          </section>
+
+          <!-- STATS -->
+          <section class="sec statsec pd" data-sec="stats" data-slabel="Numbers" data-el="statsSec">
+            <div class="wrap grid4">
+              <div class="stat pd" data-el="stats"><b class="num hd" data-n="120" data-suf="+">120+</b><span data-tx="st1" data-lb="Number 1 label">Projects</span></div>
+              <div class="stat pd" data-el="stats"><b class="num hd" data-n="98" data-suf="%">98%</b><span data-tx="st2" data-lb="Number 2 label">Happy clients</span></div>
+              <div class="stat pd" data-el="stats"><b class="num hd" data-n="24" data-suf="h">24h</b><span data-tx="st3" data-lb="Number 3 label">Reply time</span></div>
+              <div class="stat pd" data-el="stats"><b class="num hd" data-n="5" data-suf="y">5y</b><span data-tx="st4" data-lb="Number 4 label">Experience</span></div>
+            </div>
+          </section>
+
+          <!-- GALLERY -->
+          <section class="sec alt gallery pd" data-sec="gallery" data-slabel="Gallery" data-el="gallerySec">
+            <div class="wrap">
+              <h2 class="hd sect" data-el="headings" data-tx="galT" data-lb="Gallery title">Recent work</h2>
+              <p class="intro" data-el="subheads" data-tx="galS" data-lb="Gallery intro">A few styles we have built for clients.</p>
+              <div class="tiles">
+                <div class="tile" style="--g:1" data-el="gallery"><span>Project one</span></div>
+                <div class="tile tall" style="--g:3" data-el="gallery"><span>Project two</span></div>
+                <div class="tile" style="--g:5" data-el="gallery"><span>Project three</span></div>
+                <div class="tile" style="--g:2" data-el="gallery"><span>Project four</span></div>
+                <div class="tile wide" style="--g:4" data-el="gallery"><span>Project five</span></div>
+                <div class="tile" style="--g:6" data-el="gallery"><span>Project six</span></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- QUOTES -->
+          <section class="sec quotes pd" data-sec="quotes" data-slabel="Testimonials" data-el="quotesSec">
+            <div class="wrap">
+              <h2 class="hd sect" data-el="headings" data-tx="quoT" data-lb="Testimonials title">What clients say</h2>
+              <p class="intro" data-el="subheads" data-tx="quoS" data-lb="Testimonials intro">Sample text. Replace it with your own customer words.</p>
+              <div class="grid3">
+                <figure class="card pd" data-el="quotes"><blockquote data-tx="q1" data-lb="Quote 1" data-long="1">Sample quote: the new site brings us calls every week.</blockquote><figcaption data-tx="q1n" data-lb="Quote 1 name">Client name</figcaption></figure>
+                <figure class="card pd" data-el="quotes"><blockquote data-tx="q2" data-lb="Quote 2" data-long="1">Sample quote: fast, clear and exactly what we asked for.</blockquote><figcaption data-tx="q2n" data-lb="Quote 2 name">Client name</figcaption></figure>
+                <figure class="card pd" data-el="quotes"><blockquote data-tx="q3" data-lb="Quote 3" data-long="1">Sample quote: easy to work with and always on time.</blockquote><figcaption data-tx="q3n" data-lb="Quote 3 name">Client name</figcaption></figure>
+              </div>
+            </div>
+          </section>
+
+          <!-- PRICING -->
+          <section class="sec alt pricing pd" data-sec="pricing" data-slabel="Pricing" data-el="pricingSec">
+            <div class="wrap">
+              <h2 class="hd sect" data-el="headings" data-tx="priT" data-lb="Pricing title">Simple pricing</h2>
+              <p class="intro" data-el="subheads" data-tx="priS" data-lb="Pricing intro">Pick a plan. Change it any time.</p>
+              <div class="grid3">
+                <article class="card plan pd" data-el="pricing"><h4 class="hd" data-tx="p1n" data-lb="Plan 1 name">Starter</h4><b class="price hd" data-tx="p1p" data-lb="Plan 1 price">$199</b><ul><li>One page</li><li>Mobile ready</li><li>Contact form</li></ul><span class="bt alt" data-el="planBtn" data-tx="planBtn1" data-lb="Plan 1 button">Choose</span></article>
+                <article class="card plan hot pd" data-el="pricing"><h4 class="hd" data-tx="p2n" data-lb="Plan 2 name">Business</h4><b class="price hd" data-tx="p2p" data-lb="Plan 2 price">$499</b><ul><li>Up to 6 pages</li><li>SEO setup</li><li>Animations</li></ul><span class="bt" data-el="planBtn" data-tx="planBtn2" data-lb="Plan 2 button">Choose</span></article>
+                <article class="card plan pd" data-el="pricing"><h4 class="hd" data-tx="p3n" data-lb="Plan 3 name">Custom</h4><b class="price hd" data-tx="p3p" data-lb="Plan 3 price">Talk to us</b><ul><li>Web app</li><li>Database</li><li>Ongoing support</li></ul><span class="bt alt" data-el="planBtn" data-tx="planBtn3" data-lb="Plan 3 button">Choose</span></article>
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ -->
+          <section class="sec faq pd" data-sec="faq" data-slabel="FAQ" data-el="faqSec">
+            <div class="wrap narrow">
+              <h2 class="hd sect" data-el="headings" data-tx="faqT" data-lb="FAQ title">Questions</h2>
+              <div class="faqs">
+                <div class="qa pd" data-el="faq"><b data-tx="f1q" data-lb="Question 1">How long does a website take?</b><p data-tx="f1a" data-lb="Answer 1" data-long="1">Most sites are ready in one to three weeks.</p></div>
+                <div class="qa pd" data-el="faq"><b data-tx="f2q" data-lb="Question 2">Will it work on my phone?</b><p data-tx="f2a" data-lb="Answer 2" data-long="1">Yes. Every page is built for phones, tablets and computers.</p></div>
+                <div class="qa pd" data-el="faq"><b data-tx="f3q" data-lb="Question 3">Can I update it myself later?</b><p data-tx="f3a" data-lb="Answer 3" data-long="1">Yes, and we can show you how in a short call.</p></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CONTACT -->
+          <section class="sec alt contact pd" data-sec="contact" data-slabel="Contact" data-el="contactSec">
+            <div class="wrap narrow">
+              <h2 class="hd sect" data-el="headings" data-tx="conT" data-lb="Contact title">Tell us about your project</h2>
+              <div class="form pd" data-el="form">
+                <div class="fld"><span data-tx="fl1" data-lb="Field 1 label">Name</span><i class="inp" data-el="inputs"></i></div>
+                <div class="fld"><span data-tx="fl2" data-lb="Field 2 label">Email</span><i class="inp" data-el="inputs"></i></div>
+                <div class="fld"><span data-tx="fl3" data-lb="Field 3 label">Message</span><i class="inp tall" data-el="inputs"></i></div>
+                <span class="bt" data-el="formBtn" data-tx="formBtn" data-lb="Send button">Send message</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- BAND -->
+          <section class="band pd" data-sec="band" data-slabel="Call-to-action band" data-el="band">
+            <div class="wrap band__in">
+              <h3 class="hd" data-el="bandTitle" data-tx="bandT" data-lb="Band title">Ready to start your project?</h3>
+              <span class="bt inv" data-el="bandBtn" data-tx="bandBtn" data-lb="Band button">Contact us</span>
+            </div>
+          </section>
+
+          <!-- FOOTER -->
+          <footer class="foot pd" data-el="footer" data-sec="footer" data-slabel="Footer">
+            <span data-tx="foot" data-lb="Footer text">© Your business · Privacy · Terms</span>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+    <button type="button" class="fsx" id="fsExit" hidden>Back to editing</button>
+  </section>
+
+  <!-- ===================== CONTROL PANEL ===================== -->
+  <aside class="panel" aria-label="Design controls">
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="tabbody" id="tabbody"></div>
+  </aside>
+
+</main>
+
+<p class="toast" id="toast" role="status" aria-live="polite"></p>
+<script src="assets/js/studio.js?v=20261031"></script>
+</body>
+</html>
